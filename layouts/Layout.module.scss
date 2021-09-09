@@ -1,0 +1,43 @@
+@import '../styles/variables.scss';
+
+.header {
+    position: fixed;
+    width: 100%;
+    padding: 5px 0;
+    border-bottom: 4px solid $color-accent;
+    &__content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.main {
+    padding-top: 70px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    &__text {
+        padding-left: 10px;
+        font-size: 20px;
+    }
+    &__img {
+        cursor: pointer;
+    }
+}
+
+.list {
+    list-style-type: none;
+    display: flex;
+    &__item {
+        font-size: 18px;
+        padding: 5px 10px;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+            color: $color-accent;
+        }
+    }
+}
