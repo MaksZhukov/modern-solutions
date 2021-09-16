@@ -5,6 +5,8 @@
     width: 100%;
     padding: 5px 0;
     border-bottom: 4px solid $color-accent;
+    background-color: $color-1;
+    z-index: 10;
     &__content {
         display: flex;
         align-items: center;
