@@ -21,6 +21,7 @@
 .logo {
     display: flex;
     align-items: center;
+    flex: 1;
     &__text {
         padding-left: 10px;
         font-size: 20px;
@@ -42,4 +43,24 @@
             color: $color-accent;
         }
     }
+    margin-right: 10px;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    &__link {
+        color: $color-2;
+        font-weight: bold;
+        text-decoration: none;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+            color: $color-accent;
+        }
+    }
+}
+
+.footer {
+    padding: 10px;
+    background-color: $color-3;
 }

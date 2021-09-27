@@ -9,7 +9,7 @@ const menu = [
     { path: '/programs', name: 'Программы' },
     { path: '/prices', name: 'Цены' },
     { path: '/uslugi', name: 'Услуги' },
-    { path: '/contakty', name: 'Контакты' },
+    { path: '/contakty', name: 'Контакты' }
 ];
 
 export default function Layout({ children }) {
@@ -18,17 +18,10 @@ export default function Layout({ children }) {
             <header className={styles.header}>
                 <Container className={styles['header__content']}>
                     <div className={styles.logo}>
-                        <Link href='/'>
-                            <Image
-                                className={styles['logo__img']}
-                                width={39}
-                                height={57}
-                                src={Logo}
-                                alt='Logo'></Image>
+                        <Link href="/">
+                            <Image className={styles['logo__img']} width={39} height={57} src={Logo} alt="Logo"></Image>
                         </Link>
-                        <span className={styles['logo__text']}>
-                            Современное решение
-                        </span>
+                        <span className={styles['logo__text']}>Современное решение</span>
                     </div>
                     <nav>
                         <ul className={styles['list']}>
@@ -36,22 +29,44 @@ export default function Layout({ children }) {
                                 return (
                                     <li className={styles['list__item']}>
                                         <Link href={item.path}>
-                                            <span
-                                                className={
-                                                    styles['list__item-content']
-                                                }>
-                                                {item.name}
-                                            </span>
+                                            <span className={styles['list__item-content']}>{item.name}</span>
                                         </Link>
                                     </li>
                                 );
                             })}
                         </ul>
                     </nav>
+                    <div className={styles.contacts}>
+                        <a className={styles['contacts__link']} href="#">
+                            +375 (29) 999-99-99
+                        </a>
+                        <a className={styles['contacts__link']} href="#">
+                            +375 (29) 999-99-99
+                        </a>
+                        <a className={styles['contacts__link']} href="#">
+                            it-cooperation@gmail.ru
+                        </a>
+                        <span>Время работы: 10:00-22:00</span>
+                    </div>
                 </Container>
             </header>
             <main className={styles.main}>{children}</main>
-            <footer>footer</footer>
+            <footer className={styles.footer}>
+                <Container className={styles['footer__content']}>
+                    <div className={styles.about}>
+                        <h4 className={styles['about__title']}>О НАС</h4>
+                        <div className={styles['about__description']}>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam laborum quod quis amet autem
+                            consectetur voluptatibus et ut aspernatur sequi ducimus atque voluptate laudantium, eaque
+                            odit quo hic rem cumque.
+                        </div>
+                        <span className={styles['about__reg']}>
+                            В торговом реестре с 17 мая 2017, Свидетельство о гос. регистрации №191646728, 20.12.2011
+                            выдано Мингорисполкомом
+                        </span>
+                    </div>
+                </Container>
+            </footer>
         </>
     );
 }
