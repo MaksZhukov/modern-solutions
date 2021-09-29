@@ -14,28 +14,34 @@ const clientImages = Array(10)
 
 const services = [
     {
-        title: 'Внедрение 1C',
-        description: 'Быстро внедрим программы для вашего бизнеса'
+        title: 'ИНТЕГРАЦИЯ 1С С ПРОГРАММНЫМИ ПРОДУКТАМИ',
+        description: 'Быстро внедрим программы для вашего бизнеса',
+        url: 'uslugi-integration.jpg'
     },
     {
-        title: 'Внедрение 1C',
-        description: 'Быстро внедрим программы для вашего бизнеса'
+        title: 'ТЕХНИЧЕСКИЙ АУДИТ ПРОГРАММ 1С',
+        description: 'Быстро внедрим программы для вашего бизнеса',
+        url: 'uslugi-audit.png'
     },
     {
-        title: 'Внедрение 1C',
-        description: 'Быстро внедрим программы для вашего бизнеса'
+        title: 'ОБНОВЛЕНИЕ ПРОДУКТОВ 1С',
+        description: 'Быстро внедрим программы для вашего бизнеса',
+        url: 'uslugi-updating.png'
     },
     {
-        title: 'Внедрение 1C',
-        description: 'Быстро внедрим программы для вашего бизнеса'
+        title: 'УСТАНОВКА ПРОГРАММ 1С',
+        description: 'Быстро внедрим программы для вашего бизнеса',
+        url: 'uslugi-install.jpg'
     },
     {
-        title: 'Внедрение 1C',
-        description: 'Быстро внедрим программы для вашего бизнеса'
+        title: 'ДОРАБОТКА ПРОДУКТОВ 1С',
+        description: 'Быстро внедрим программы для вашего бизнеса',
+        url: 'uslugi-rework.jpg'
     },
     {
-        title: 'Внедрение 1C',
-        description: 'Быстро внедрим программы для вашего бизнеса'
+        title: 'ВНЕДРЕНИЕ И ОБУЧЕНИЕ ПРОГРАММАМ 1С',
+        description: 'Быстро внедрим программы для вашего бизнеса',
+        url: 'uslugi-introduction-and-education.png'
     }
 ];
 
@@ -70,6 +76,7 @@ export default function Home() {
                     {services.map((item) => (
                         <div className={styles['services__item']}>
                             <h3 className={styles['services__title']}>{item.title}</h3>
+                            <img className={styles['services__img']} src={item.url} alt="Usluga" />
                             <div className={styles['services__description']}>{item.description}</div>
                             <Button>Подробнее</Button>
                         </div>

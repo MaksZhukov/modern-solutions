@@ -6,6 +6,7 @@
 
 .clients {
     height: 200px;
+    margin: 50px 0;
     &__item {
         height: 200px;
         object-fit: contain;
@@ -34,8 +35,17 @@
         margin: 0 0 40px;
         border-radius: 5px;
     }
+    &__title {
+        height: 38px;
+    }
     &__description {
         flex: 1;
+        padding-top: 15px;
+        font-weight: bold;
+    }
+    &__img {
+        height: 120px;
+        margin: 0 auto;
     }
 }
 
