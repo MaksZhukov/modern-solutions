@@ -1,0 +1,17 @@
+@import '../../styles/variables.scss';
+
+.table {
+    width: 100%;
+    margin: 30px 0;
+    &__head {
+        background-color: $color-accent;
+    }
+    &__row {
+    }
+    &__cell {
+        padding: 5px;
+        &_center {
+            text-align: center;
+        }
+    }
+}

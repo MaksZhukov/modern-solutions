@@ -7,7 +7,7 @@ import Container from '../components/Container/Container';
 const menu = [
     { path: '/', name: 'Главная' },
     { path: '/programs', name: 'Программы' },
-    { path: '/prices', name: 'Цены' },
+    { path: '/prices', name: 'Прайс-лист' },
     { path: '/uslugi', name: 'Услуги' },
     { path: '/contakty', name: 'Контакты' }
 ];
