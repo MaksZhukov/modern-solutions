@@ -45,6 +45,10 @@ const services = [
     },
 ];
 
+console.log(styles['title']);
+
+let t = styles['title'];
+
 const advantages = [
     {
         name: 'Сертифицированные специалисты',
@@ -61,7 +65,7 @@ export default function Home() {
     return (
         <Layout>
             <Container>
-                <h2 className={styles['title']}>Преимущества работы с нами</h2>
+                <h2 className={t}>Преимущества работы с нами</h2>
                 <div className={styles.services}>
                     {services.map((item) => (
                         <div
@@ -80,7 +84,9 @@ export default function Home() {
                 <h2 className={styles['title']}>Наши услуги</h2>
                 <div className={styles.services}>
                     {services.map((item) => (
-                        <div className={styles['services__item']}>
+                        <div
+                            key={item.title}
+                            className={styles['services__item']}>
                             <h3 className={styles['services__title']}>
                                 {item.title}
                             </h3>
@@ -106,7 +112,7 @@ export default function Home() {
                     slidesToShow={3}
                     className={styles.clients}>
                     {clientImages.map((item, index) => (
-                        <div className={styles['clients__iёtem']}>
+                        <div key={item} className={styles['clients__iёtem']}>
                             <img
                                 className={styles['clients__img']}
                                 src={`client-${index + 1}.jpg`}
