@@ -7,6 +7,7 @@ import styles from './index.module.scss';
 import Container from '../components/Container/Container';
 import dynamic from 'next/dynamic';
 import { useEffect, useState } from 'react';
+import { Parallax } from 'react-parallax';
 
 const clientImages = Array(10)
     .fill()
@@ -45,39 +46,55 @@ const services = [
     },
 ];
 
-console.log(styles['title']);
-
-let t = styles['title'];
-
 const advantages = [
     {
         name: 'Сертифицированные специалисты',
+        url: 'advantages-full-services.png',
     },
     {
         name: 'Индивидуальный подход',
+        url: 'advantages-guarantee.png',
     },
     {
-        name: 'Полный спектр услу',
+        name: 'Гарантия ожидаемого результата',
+        url: 'advantages-individual-approach.png',
+    },
+    {
+        name: 'Полный спектр услуг',
+        url: 'advantages-specialists.png',
     },
 ];
 
 export default function Home() {
     return (
         <Layout>
+            <Parallax
+                bgImage='main-section.webp'
+                bgImageAlt='1c'
+                contentClassName={styles['main-section__content']}
+                strength={300}
+                className={styles['main-section']}>
+                <h1 className={styles['main-section__title']}>
+                    АВТОМАТИЗАЦИЯ БИЗНЕСА С ПОМОЩЬЮ ПРОГРАММ 1С
+                </h1>
+                <h2 className={styles['main-section__subtitle']}>
+                    Мы предлагаем полный спектр профессиональных услуг по
+                    обслуживанию систем 1С:Предприятие.{' '}
+                </h2>
+            </Parallax>
             <Container>
-                <h2 className={t}>Преимущества работы с нами</h2>
-                <div className={styles.services}>
-                    {services.map((item) => (
+                <h2 className={styles['title']}>Преимущества работы с нами</h2>
+                <div className={styles.advantages}>
+                    {advantages.map((item, index) => (
                         <div
-                            key={item.title}
-                            className={styles['services__item']}>
-                            <h3 className={styles['services__title']}>
-                                {item.title}
+                            key={item.name}
+                            className={styles['advantages__item']}>
+                            <img
+                                src={item.url}
+                                alt={`Преимущество-` + index}></img>
+                            <h3 className={styles['advantages__title']}>
+                                {item.name}
                             </h3>
-                            <div className={styles['services__description']}>
-                                {item.description}
-                            </div>
-                            <Button>Подробнее</Button>
                         </div>
                     ))}
                 </div>
@@ -112,10 +129,10 @@ export default function Home() {
                     slidesToShow={3}
                     className={styles.clients}>
                     {clientImages.map((item, index) => (
-                        <div key={item} className={styles['clients__iёtem']}>
+                        <div key={item} className={styles['clients__item']}>
                             <img
                                 className={styles['clients__img']}
-                                src={`client-${index + 1}.jpg`}
+                                src={item}
                             />
                         </div>
                     ))}

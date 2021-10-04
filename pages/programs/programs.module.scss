@@ -1,0 +1,17 @@
+.title {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.programs {
+    &__item {
+        display: flex;
+        margin-bottom: 50px;
+    }
+    &__img {
+        margin-right: 15px;
+    }
+    &__desc {
+        font-size: 16px;
+    }
+}

@@ -1,4 +1,5 @@
 @import-normalize;
+@import 'variables';
 
 body {
     margin: 0 auto;
@@ -16,4 +17,9 @@ div {
 
 .slick-slide div {
     outline: none;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    color: $color-accent;
 }

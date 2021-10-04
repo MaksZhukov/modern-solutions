@@ -4,6 +4,28 @@
     font-size: 20px;
 }
 
+.main-section {
+    height: 825px;
+    color: $color-1;
+    &__content {
+        margin: 150px 0 0 300px;
+        max-width: 700px;
+    }
+    &__title {
+        margin-bottom: 50px;
+    }
+}
+
+.advantages {
+    padding: 50px 0 0 0;
+    display: flex;
+    justify-content: space-around;
+    &__item {
+        flex: 1;
+        text-align: center;
+    }
+}
+
 .clients {
     height: 200px;
     margin: 50px 0;
@@ -24,6 +46,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    padding-top: 50px;
     &__item {
         display: flex;
         flex-direction: column;
@@ -51,5 +74,5 @@
 
 .title {
     text-align: center;
-    margin-top: 30px;
+    margin-top: 50px;
 }
