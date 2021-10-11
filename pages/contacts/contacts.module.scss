@@ -1,0 +1,18 @@
+.title {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.subtitle {
+    text-align: center;
+}
+
+.content {
+    display: flex;
+    &__mobile {
+        flex: 1;
+    }
+    &__map {
+        flex: 2;
+    }
+}

@@ -13,38 +13,38 @@ const clientImages = Array(10)
     .fill()
     .map((item, index) => `/client-${index + 1}.jpg`);
 
-const services = [
-    {
-        title: 'ИНТЕГРАЦИЯ 1С С ПРОГРАММНЫМИ ПРОДУКТАМИ',
-        description: 'Быстро внедрим программы для вашего бизнеса',
-        url: 'uslugi-integration.jpg'
-    },
-    {
-        title: 'ТЕХНИЧЕСКИЙ АУДИТ ПРОГРАММ 1С',
-        description: 'Быстро внедрим программы для вашего бизнеса',
-        url: 'uslugi-audit.png'
-    },
-    {
-        title: 'ОБНОВЛЕНИЕ ПРОДУКТОВ 1С',
-        description: 'Быстро внедрим программы для вашего бизнеса',
-        url: 'uslugi-updating.png'
-    },
-    {
-        title: 'УСТАНОВКА ПРОГРАММ 1С',
-        description: 'Быстро внедрим программы для вашего бизнеса',
-        url: 'uslugi-install.jpg'
-    },
-    {
-        title: 'ДОРАБОТКА ПРОДУКТОВ 1С',
-        description: 'Быстро внедрим программы для вашего бизнеса',
-        url: 'uslugi-rework.jpg'
-    },
-    {
-        title: 'ВНЕДРЕНИЕ И ОБУЧЕНИЕ ПРОГРАММАМ 1С',
-        description: 'Быстро внедрим программы для вашего бизнеса',
-        url: 'uslugi-introduction-and-education.png'
-    }
-];
+// const services = [
+//     {
+//         title: 'ИНТЕГРАЦИЯ 1С С ПРОГРАММНЫМИ ПРОДУКТАМИ',
+//         description: 'Быстро внедрим программы для вашего бизнеса',
+//         url: 'uslugi-integration.jpg'
+//     },
+//     {
+//         title: 'ТЕХНИЧЕСКИЙ АУДИТ ПРОГРАММ 1С',
+//         description: 'Быстро внедрим программы для вашего бизнеса',
+//         url: 'uslugi-audit.png'
+//     },
+//     {
+//         title: 'ОБНОВЛЕНИЕ ПРОДУКТОВ 1С',
+//         description: 'Быстро внедрим программы для вашего бизнеса',
+//         url: 'uslugi-updating.png'
+//     },
+//     {
+//         title: 'УСТАНОВКА ПРОГРАММ 1С',
+//         description: 'Быстро внедрим программы для вашего бизнеса',
+//         url: 'uslugi-install.jpg'
+//     },
+//     {
+//         title: 'ДОРАБОТКА ПРОДУКТОВ 1С',
+//         description: 'Быстро внедрим программы для вашего бизнеса',
+//         url: 'uslugi-rework.jpg'
+//     },
+//     {
+//         title: 'ВНЕДРЕНИЕ И ОБУЧЕНИЕ ПРОГРАММАМ 1С',
+//         description: 'Быстро внедрим программы для вашего бизнеса',
+//         url: 'uslugi-introduction-and-education.png'
+//     }
+// ];
 
 const advantages = [
     {
@@ -65,30 +65,59 @@ const advantages = [
     }
 ];
 
-const kindOfServices = [
+const services = [
     {
         name: 'Внедрение 1С',
-        desc: 'Быстро внедрим программы 1C'
+        desc: 'Быстро внедрим программы 1C',
+        url: 'services-1.jpg'
     },
     {
         name: 'Сопровождение 1C',
-        desc: 'Оказываем комплекс услуг на регулярной основе, предназначенных для поддержания и развития существующей системы автоматизации'
+        desc: 'Оказываем комплекс услуг на регулярной основе, предназначенных для поддержания и развития существующей системы автоматизации',
+        url: 'services-2.jpg'
     },
     {
         name: '1C ИТС',
-        desc: 'Информационно-технологическое сопровождение для пользователей 1C'
+        desc: 'Информационно-технологическое сопровождение для пользователей 1C',
+        url: 'services-3.jpg'
     },
     {
         name: '1C Автоматизация',
-        desc: 'Комплексно автоматизируем учет и управление всех участков бизнеса'
+        desc: 'Комплексно автоматизируем учет и управление всех участков бизнеса',
+        url: 'services-4.jpg'
     },
     {
         name: 'Оптимизация 1C',
-        desc: 'Улучшаем производительность информационной системы 1C'
+        desc: 'Улучшаем производительность информационной системы 1C',
+        url: 'services-5.jpg'
     },
     {
         name: 'Абонентская 1C',
-        desc: 'Поддерживаем стабильное функционирование платформы с учётом последних обновлений программы'
+        desc: 'Поддерживаем стабильное функционирование платформы с учётом последних обновлений программы',
+        url: 'services-6.jpg'
+    }
+];
+
+const guaranteeElements = [
+    {
+        name: 'Индивидуальный подход',
+        url: 'individual-approach.jpg'
+    },
+    {
+        name: 'Профессиональная аналитика',
+        url: 'professional-analytics.jpg'
+    },
+    {
+        name: 'Полное сопровождение',
+        url: 'full-support.jpg'
+    },
+    {
+        name: 'Контролируемый бюджет',
+        url: 'controlled-budget.jpg'
+    },
+    {
+        name: 'Гарантия ожидаемого результата',
+        url: 'guarantee-result.jpg'
     }
 ];
 
@@ -112,11 +141,20 @@ export default function Home() {
                 </h2>
                 <div className={styles.subtitle}>РАБОТАЕМ В ВАШЕМ ОФИСЕ И УДАЛЕННО</div>
                 <div className={styles.services}>
-                    {kindOfServices.map((item) => (
+                    {services.map((item) => (
                         <div key={item.name} className={styles['services__item']}>
                             <h3 className={styles['services__title']}>{item.name}</h3>
                             <img className={styles['services__img']} src={item.url} alt="Usluga" />
                             <div className={styles['services__description']}>{item.desc}</div>
+                        </div>
+                    ))}
+                </div>
+                <h2 className={styles.title}>Гарантия ожидаемого результата</h2>
+                <div className={styles['guarantees']}>
+                    {guaranteeElements.map((item) => (
+                        <div className={styles['guarantees__item']}>
+                            <img src={item.url} className={styles['guarantees__img']}></img>
+                            <h3 className={styles['guarantees__title']}>{item.name}</h3>
                         </div>
                     ))}
                 </div>
