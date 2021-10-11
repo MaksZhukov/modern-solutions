@@ -129,17 +129,6 @@ export default function Home() {
                         </div>
                     ))}
                 </div>
-                <h2 className={styles['title']}>Наши услуги</h2>
-                <div className={styles.services}>
-                    {services.map((item) => (
-                        <div key={item.title} className={styles['services__item']}>
-                            <h3 className={styles['services__title']}>{item.title}</h3>
-                            <img className={styles['services__img']} src={item.url} alt="Usluga" />
-                            <div className={styles['services__description']}>{item.description}</div>
-                            <Button>Подробнее</Button>
-                        </div>
-                    ))}
-                </div>
                 <h2 className={styles['title']}>Наши клиенты</h2>
                 <Slider
                     centerMode
