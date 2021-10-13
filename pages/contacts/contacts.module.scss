@@ -1,3 +1,5 @@
+@import '../../styles/variables.scss';
+
 .title {
     text-align: center;
     margin: 50px 0;
@@ -7,12 +9,18 @@
     text-align: center;
 }
 
-.content {
-    display: flex;
-    &__mobile {
-        flex: 1;
+.content__info {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.form {
+    margin: 0 auto 50px;
+    width: 500px;
+    &__control {
+        margin-bottom: 20px;
     }
-    &__map {
-        flex: 2;
+    &__submit {
+        width: 100%;
     }
 }

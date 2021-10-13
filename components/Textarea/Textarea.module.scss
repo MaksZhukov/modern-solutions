@@ -1,0 +1,15 @@
+@import '../../styles/variables.scss';
+
+.textarea {
+    border: 1px solid $color-3;
+    padding: 10px;
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+    outline: none;
+    &:hover,
+    &:focus {
+        border-color: $color-accent;
+    }
+}
