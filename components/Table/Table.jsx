@@ -36,7 +36,9 @@ const Table = ({ columns, data }) => {
                                                     align === 'center',
                                             }
                                         )}>
-                                        {value}
+                                        {typeof value === 'number'
+                                            ? value.toFixed(2)
+                                            : value}
                                     </td>
                                 );
                             })}

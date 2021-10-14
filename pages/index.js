@@ -13,58 +13,6 @@ const clientImages = Array(10)
     .fill()
     .map((item, index) => `/client-${index + 1}.jpg`);
 
-// const services = [
-//     {
-//         title: 'ИНТЕГРАЦИЯ 1С С ПРОГРАММНЫМИ ПРОДУКТАМИ',
-//         description: 'Быстро внедрим программы для вашего бизнеса',
-//         url: 'uslugi-integration.jpg'
-//     },
-//     {
-//         title: 'ТЕХНИЧЕСКИЙ АУДИТ ПРОГРАММ 1С',
-//         description: 'Быстро внедрим программы для вашего бизнеса',
-//         url: 'uslugi-audit.png'
-//     },
-//     {
-//         title: 'ОБНОВЛЕНИЕ ПРОДУКТОВ 1С',
-//         description: 'Быстро внедрим программы для вашего бизнеса',
-//         url: 'uslugi-updating.png'
-//     },
-//     {
-//         title: 'УСТАНОВКА ПРОГРАММ 1С',
-//         description: 'Быстро внедрим программы для вашего бизнеса',
-//         url: 'uslugi-install.jpg'
-//     },
-//     {
-//         title: 'ДОРАБОТКА ПРОДУКТОВ 1С',
-//         description: 'Быстро внедрим программы для вашего бизнеса',
-//         url: 'uslugi-rework.jpg'
-//     },
-//     {
-//         title: 'ВНЕДРЕНИЕ И ОБУЧЕНИЕ ПРОГРАММАМ 1С',
-//         description: 'Быстро внедрим программы для вашего бизнеса',
-//         url: 'uslugi-introduction-and-education.png'
-//     }
-// ];
-
-const advantages = [
-    {
-        name: 'Сертифицированные специалисты',
-        url: 'advantages-full-services.png',
-    },
-    {
-        name: 'Индивидуальный подход',
-        url: 'advantages-guarantee.png',
-    },
-    {
-        name: 'Гарантия ожидаемого результата',
-        url: 'advantages-individual-approach.png',
-    },
-    {
-        name: 'Полный спектр услуг',
-        url: 'advantages-specialists.png',
-    },
-];
-
 const services = [
     {
         name: 'Внедрение 1С',
@@ -98,7 +46,7 @@ const services = [
     },
 ];
 
-const guaranteeElements = [
+const advantages = [
     {
         name: 'Индивидуальный подход',
         url: 'individual-approach.jpg',
@@ -165,29 +113,14 @@ export default function Home() {
                         </div>
                     ))}
                 </div>
-                <h2 className={styles.title}>Гарантия ожидаемого результата</h2>
+                <h2 className={styles.title}>Преимущества работы с нами</h2>
                 <div className={styles['guarantees']}>
-                    {guaranteeElements.map((item) => (
+                    {advantages.map((item) => (
                         <div className={styles['guarantees__item']}>
                             <img
                                 src={item.url}
                                 className={styles['guarantees__img']}></img>
                             <h3 className={styles['guarantees__title']}>
-                                {item.name}
-                            </h3>
-                        </div>
-                    ))}
-                </div>
-                <h2 className={styles['title']}>Преимущества работы с нами</h2>
-                <div className={styles.advantages}>
-                    {advantages.map((item, index) => (
-                        <div
-                            key={item.name}
-                            className={styles['advantages__item']}>
-                            <img
-                                src={item.url}
-                                alt={`Преимущество-` + index}></img>
-                            <h3 className={styles['advantages__title']}>
                                 {item.name}
                             </h3>
                         </div>

@@ -23,6 +23,10 @@ export default function Contacts() {
                     продуктов 1C на Вамем предприятии
                 </h3>
                 <div className={styles.content}>
+                    <div className={styles.content__left}>
+                        <img src='phone.jpg' alt='Phone'></img>
+                    </div>
+                    <div className={styles.content__right}></div>
                     <div className={styles['content__info']}>
                         <div className={styles['content__map-address']}>
                             <h3>Адрес</h3>
