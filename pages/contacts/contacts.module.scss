@@ -6,7 +6,7 @@
 }
 
 .subtitle {
-    text-align: center;
+    margin-bottom: 30px;
 }
 
 .content__info {
@@ -14,13 +14,125 @@
     text-align: center;
 }
 
+.content {
+    display: flex;
+    &__left {
+        flex: 1;
+    }
+    &__right {
+        flex: 2;
+        border-left: 1px solid $color-3;
+        padding: 30px;
+        &-info {
+            display: flex;
+            margin-bottom: 20px;
+        }
+        &-info-address {
+            padding-right: 60px;
+        }
+        &-working-hours {
+            white-space: nowrap;
+        }
+    }
+}
+
+.phone {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 50px;
+    &__text {
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translateX(-50%);
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 24px;
+    }
+    &__tel {
+        position: absolute;
+        color: $color-accent;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        width: 100%;
+        text-align: center;
+        font-size: 16px;
+        text-decoration: none;
+        font-weight: bold;
+        transform: translateX(-50%);
+        &:hover {
+            transition: all 0.3s ease-in-out;
+            color: $color-2;
+        }
+    }
+}
+
+.email {
+    &__title {
+        font-weight: bold;
+        font-size: 24px;
+    }
+    &__value {
+        text-decoration: none;
+        color: $color-2;
+        font-weight: 500;
+        font-size: 18px;
+        &:hover {
+            transition: all 0.3s ease-in-out;
+            color: $color-accent;
+        }
+        span {
+            color: $color-accent;
+        }
+    }
+}
+
+.section-form {
+    background-color: $color-4;
+    &__container {
+        display: flex;
+    }
+    &__photo {
+        margin-bottom: 30px;
+    }
+    &__name {
+        font-size: 24px;
+        margin-bottom: 20px;
+        text-align: center;
+        span {
+            color: $color-accent;
+        }
+    }
+    &__head {
+        display: inline-block;
+    }
+    &__position {
+        max-width: 200px;
+        text-align: center;
+    }
+    &__left {
+        padding: 30px 0;
+        flex: 1;
+    }
+    &__right {
+        flex: 2;
+        padding: 30px;
+        border-left: 1px solid $color-3;
+        &-title {
+            font-size: 24px;
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+    }
+}
+
 .form {
-    margin: 0 auto 50px;
-    width: 500px;
     &__control {
         margin-bottom: 20px;
     }
-    &__submit {
-        width: 100%;
+    &__policy {
+        font-size: 12px;
+        margin-bottom: 10px;
     }
 }

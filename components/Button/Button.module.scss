@@ -1,13 +1,16 @@
 @import '../../styles/variables.scss';
 
 .button {
-    padding: 5px 10px;
-    background-color: transparent;
+    padding: 10px 60px;
+    border-radius: 30px;
+    background-color: $color-accent;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
-    border: 1px solid $color-2;
+    border: 1px solid transparent;
+    color: $color-1;
     &:hover {
-        background-color: $color-accent;
-        color: $color-1;
+        border: 1px solid $color-accent;
+        background-color: transparent;
+        color: $color-2;
     }
 }
