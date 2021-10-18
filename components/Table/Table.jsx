@@ -11,8 +11,7 @@ const Table = ({ columns, data }) => {
                         <td
                             key={item.name}
                             className={classNames(styles['table__cell'], {
-                                [styles['table__cell_center']]:
-                                    item.align === 'center',
+                                [styles['table__cell_center']]: item.align === 'center'
                             })}>
                             {item.name}
                         </td>
@@ -25,20 +24,10 @@ const Table = ({ columns, data }) => {
                     return (
                         <tr key={indexItem}>
                             {values.map((value, index) => {
-                                let align = columns[index].align;
+                                let { width } = columns[index];
                                 return (
-                                    <td
-                                        key={value}
-                                        className={classNames(
-                                            styles['table__cell'],
-                                            {
-                                                [styles['table__cell_center']]:
-                                                    align === 'center',
-                                            }
-                                        )}>
-                                        {typeof value === 'number'
-                                            ? value.toFixed(2)
-                                            : value}
+                                    <td key={value} width={width} className={classNames(styles['table__cell'])}>
+                                        {typeof value === 'number' ? value.toFixed(2) : value}
                                     </td>
                                 );
                             })}
