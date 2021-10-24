@@ -11,8 +11,8 @@ const Table = ({ columns, data }) => {
                         <td
                             key={item.name}
                             className={classNames(styles['table__cell'], {
-                                [styles['table__cell_center']]:
-                                    item.align === 'center',
+                                [styles['table__cell_right']]:
+                                    item.align === 'right',
                             })}>
                             {item.name}
                         </td>
@@ -32,8 +32,8 @@ const Table = ({ columns, data }) => {
                                         className={classNames(
                                             styles['table__cell'],
                                             {
-                                                [styles['table__cell_center']]:
-                                                    align === 'center',
+                                                [styles['table__cell_right']]:
+                                                    align === 'right',
                                             }
                                         )}>
                                         {typeof value === 'number'
