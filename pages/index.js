@@ -10,9 +10,32 @@ import { useEffect, useState } from 'react';
 import { Parallax } from 'react-parallax';
 import { Tab, TabList, TabPanel, Tabs } from 'react-tabs';
 
-const clientImages = Array(10)
-    .fill()
-    .map((item, index) => `/client-${index + 1}.jpg`);
+const clientImages = [
+    {
+        url: 'client-1.png',
+    },
+    {
+        url: 'client-2.jpg',
+        height: '110px',
+    },
+    {
+        url: 'client-3.svg',
+    },
+    {
+        url: 'client-4.png',
+    },
+    {
+        url: 'client-5.jpg',
+    },
+    {
+        url: 'client-6.jpg',
+        height: '100px',
+    },
+    {
+        url: 'client-7.svg',
+        height: '80px',
+    },
+];
 
 const services = [
     {
@@ -255,10 +278,11 @@ export default function Home() {
                     slidesToShow={3}
                     className={styles.clients}>
                     {clientImages.map((item, index) => (
-                        <div key={item} className={styles['clients__item']}>
+                        <div key={item.url} className={styles['clients__item']}>
                             <img
+                                style={{ height: item.height }}
                                 className={styles['clients__img']}
-                                src={item}
+                                src={item.url}
                             />
                         </div>
                     ))}

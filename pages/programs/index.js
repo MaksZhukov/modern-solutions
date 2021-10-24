@@ -33,7 +33,9 @@ export default function Programs() {
     return (
         <Layout>
             <Container>
-                <h2 className={styles.title}>Программы</h2>
+                <h2 className={styles.title}>
+                    Используемые нами типовые решения 1С
+                </h2>
                 <div className={styles.programs}>
                     {programs.map((item) => (
                         <div key={item.name} className={styles.programs__item}>

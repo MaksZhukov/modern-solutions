@@ -14,15 +14,19 @@ export default function Prices() {
     return (
         <Layout>
             <Container>
-                <h2 className={styles.title}>Услуги</h2>
                 <div className={styles.services}>
                     {services.map((item, index) => (
                         <div className={styles.services__item}>
-                            <img className={styles.services__img} alt={item.title} src={item.url}></img>
+                            <img
+                                className={styles.services__img}
+                                alt={item.title}
+                                src={item.url}></img>
                             <div className={styles.reviews__content}>
                                 <h3>{item.title}</h3>
                                 <p>{item.description}</p>
-                                <Button onClick={handleClick(index)}>Подробнее</Button>
+                                <Button onClick={handleClick(index)}>
+                                    Подробнее
+                                </Button>
                             </div>
                         </div>
                     ))}
