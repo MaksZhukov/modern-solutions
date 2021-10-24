@@ -25,10 +25,11 @@ const Table = ({ columns, data }) => {
                     return (
                         <tr key={indexItem}>
                             {values.map((value, index) => {
-                                let align = columns[index].align;
+                                let { width, align } = columns[index];
                                 return (
                                     <td
                                         key={value}
+                                        width={width}
                                         className={classNames(
                                             styles['table__cell'],
                                             {

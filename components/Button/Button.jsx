@@ -1,9 +1,9 @@
 import classNames from 'class-names';
 import styles from './Button.module.scss';
 
-const Button = ({ children, className }) => {
+const Button = ({ children, className, onClick }) => {
     return (
-        <button className={classNames(styles.button, className)}>
+        <button onClick={onClick} className={classNames(styles.button, className)}>
             {children}
         </button>
     );

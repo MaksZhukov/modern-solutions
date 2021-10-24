@@ -5,23 +5,21 @@
     margin: 50px 0;
 }
 
-.reviews {
+.services {
     &__item {
         display: flex;
         margin-bottom: 30px;
         border-bottom: 2px solid $color-accent;
+        padding: 20px 0;
+        align-items: center;
         &:last-child {
             border-bottom: none;
         }
     }
-    &__left {
+    &__img {
         flex: 1;
-        text-align: center;
     }
-    &__right {
+    &__content {
         flex: 3;
-    }
-    &__company-name {
-        font-weight: 700;
     }
 }

@@ -18,26 +18,26 @@ export default function Prices() {
                 <Table
                     columns={[
                         { name: 'Программы' },
-                        { name: 'Цена руб.коп.', align: 'right' },
+                        { name: 'Цена руб.коп.', width: 150, align: 'right' },
                     ]}
                     data={programs}></Table>
 
                 <Table
                     columns={[
                         { name: 'Лицензии на рабочие места' },
-                        { name: 'Цена руб.коп.', align: 'right' },
+                        { name: 'Цена руб.коп.', width: 150, align: 'right' },
                     ]}
                     data={workPlaceLicenses}></Table>
                 <Table
                     columns={[
                         { name: 'Лицензии на сервер' },
-                        { name: 'Цена руб.коп.', align: 'right' },
+                        { name: 'Цена руб.коп.', width: 150, align: 'right' },
                     ]}
                     data={serverLicenses}></Table>
                 <Table
                     columns={[
                         { name: 'Сервисы ИТС' },
-                        { name: 'Цена руб.коп.', align: 'right' },
+                        { name: 'Цена руб.коп.', width: 150, align: 'right' },
                     ]}
                     data={servicesITS}></Table>
             </Container>
