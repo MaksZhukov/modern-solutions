@@ -234,6 +234,17 @@ export default function Home() {
                         </div>
                     ))}
                 </div>
+                <div className={styles['prices-info']}>
+                    <img
+                        className={styles['prices-info__img']}
+                        src='price-info.png'></img>
+                    <div className={styles['prices-info__desc']}>
+                        Конечная стоимость рассчитывается индивидуально. <br />
+                        Вы можете оставить заявку на расчет стоимости услуг
+                        прямо сейчас, и мы свяжемся с вами для уточнения
+                        деталей.
+                    </div>
+                </div>
                 <h2 className={styles['title']}>Наши клиенты</h2>
                 <Slider
                     centerMode

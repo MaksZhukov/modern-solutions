@@ -173,3 +173,18 @@
         min-height: 56px;
     }
 }
+
+.prices-info {
+    border-top: 3px solid $color-accent;
+    border-bottom: 3px solid $color-accent;
+    padding: 30px 0;
+    margin: 30px 0;
+    display: flex;
+    &__img {
+        width: 200px;
+    }
+    &__desc {
+        align-self: center;
+        font-size: 20px;
+    }
+}
