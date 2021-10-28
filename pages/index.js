@@ -229,7 +229,7 @@ export default function Home() {
                                 </h2>
                                 <ul>
                                     {item.advantages.map((item) => (
-                                        <li>{item}</li>
+                                        <li key={item}>{item}</li>
                                     ))}
                                 </ul>
                             </div>
@@ -241,7 +241,9 @@ export default function Home() {
                 </h2>
                 <div className={styles['additional-services']}>
                     {additionalServices.map((item) => (
-                        <div className={styles['additional-services__item']}>
+                        <div
+                            key={item.name}
+                            className={styles['additional-services__item']}>
                             <img
                                 className={styles['additional-services__img']}
                                 src={item.url}

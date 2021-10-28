@@ -1,3 +1,4 @@
+import Button from '../../components/Button/Button';
 import Container from '../../components/Container/Container';
 import Layout from '../../layouts/Layout';
 import styles from './programs.module.scss';
@@ -44,11 +45,12 @@ export default function Programs() {
                                 src={item.url}
                                 alt={item.name}></img>
 
-                            <div>
+                            <div className={styles.programs__content}>
                                 <h2>{item.name}</h2>
                                 <p className={styles.programs__desc}>
                                     {item.description}
                                 </p>
+                                <Button>Подробнее</Button>
                             </div>
                         </div>
                     ))}

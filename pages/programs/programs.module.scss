@@ -1,3 +1,5 @@
+@import '../../styles/variables.scss';
+
 .title {
     text-align: center;
     margin: 50px 0;
@@ -6,12 +8,19 @@
 .programs {
     &__item {
         display: flex;
-        margin-bottom: 50px;
+        margin-bottom: 30px;
+        border-bottom: 2px solid $color-accent;
+        padding: 0 0 20px;
+        align-items: center;
+        &:last-child {
+            border-bottom: none;
+        }
     }
     &__img {
-        margin-right: 15px;
+        padding: 25px;
     }
-    &__desc {
-        font-size: 16px;
+    &__content {
+        margin-left: 30px;
+        flex: 3;
     }
 }
