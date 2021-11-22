@@ -10,6 +10,10 @@
     &__content {
         margin: 150px 0 0 200px;
         max-width: 700px;
+        @media (max-width: 1600px) {
+            margin: 100px 0 0 100px;
+            max-width: 500px;
+        }
     }
     &__title {
         margin-bottom: 50px;
@@ -53,6 +57,7 @@
     }
     &__img {
         flex: 1;
+        margin-bottom: 40px;
     }
     &__content {
         flex: 1;
@@ -160,6 +165,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-top: 50px;
     &__item {
         width: 30%;
     }
