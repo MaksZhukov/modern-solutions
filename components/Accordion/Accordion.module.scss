@@ -1,0 +1,37 @@
+@import '../../styles/variables.scss';
+
+.accordion {
+    padding-left: 20px;
+    margin-bottom: 10px;
+    &_expanded {
+        .accordion__header::before {
+            border-bottom: 5px solid $color-2;
+            border-top: transparent;
+            top: 12px;
+        }
+    }
+    &__header {
+        border-bottom: 1px $color-2 dashed;
+        display: inline-block;
+        cursor: pointer;
+        position: relative;
+        margin-bottom: 10px;
+        font-weight: bold;
+        &::before {
+            content: '';
+            width: 0px;
+            height: 0px;
+            position: absolute;
+            left: -20px;
+            top: 10px;
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            border-top: 5px solid $color-2;
+        }
+    }
+    &__content {
+        background-color: $color-5;
+        padding: 20px 40px 20px 20px;
+        border-radius: 10px;
+    }
+}

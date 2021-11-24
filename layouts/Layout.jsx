@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import styles from './Layout.module.scss';
 import Container from '../components/Container/Container';
 import { useRouter } from 'next/router';
@@ -21,10 +22,12 @@ export default function Layout({ children }) {
                 <Container className={styles['header__content']}>
                     <div className={styles.logo}>
                         <Link href='/'>
-                            <img
-                                className={styles['logo__img']}
-                                src='logo.jpg'
-                                alt='Logo'></img>
+                            <Image
+                                src={'/logo.jpg'}
+                                width={39}
+                                height={57}
+                                alt='Logo'
+                                className={styles.logo__img}></Image>
                         </Link>
                         <span className={styles['logo__text']}>
                             Современное решение

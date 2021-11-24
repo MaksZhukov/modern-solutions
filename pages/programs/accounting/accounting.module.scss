@@ -14,12 +14,8 @@
 
 .desc {
     margin-bottom: 100px;
-    &__right {
-        float: right;
-        margin-top: 100px;
-        margin-left: 50px;
-    }
     &__img {
         width: 250px;
+        float: right;
     }
 }
