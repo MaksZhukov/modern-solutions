@@ -115,7 +115,7 @@ const functionalities = [
             <>
                 «1С:Управление компанией для Беларуси» поддерживает{' '}
                 <b>
-                    >ведение товарного ассортимента, цен и скидок предприятия,
+                    ведение товарного ассортимента, цен и скидок предприятия,
                     планирование продаж, а также работу с покупателями и
                     заказчиками.
                 </b>
@@ -588,7 +588,7 @@ export default function CompanyManagement() {
                     <div className={styles.intro__left}>
                         <img
                             src='../program-manage-company.webp'
-                            alt='Управление торговлей'
+                            alt='Управление компанией'
                         />
                     </div>
                     <div className={styles.intro__right}>
@@ -628,7 +628,7 @@ export default function CompanyManagement() {
                     </ul>
                     <a
                         target='_blank'
-                        href='http://by.demo.1c.eu/companymanagement/en_US/'>
+                        href='http://by.demo.1c.eu/companymanagement'>
                         <Button>Демо-версия конфигурации</Button>
                     </a>
                 </div>
