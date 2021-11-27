@@ -366,7 +366,7 @@ export default function Accounting() {
                     </p>
                     <br></br>
                 </div>
-                <a href='http://by.demo.1c.eu/accounting'>
+                <a target='_blank' href='http://by.demo.1c.eu/accounting'>
                     <Button>Демо-версия конфигурации</Button>
                 </a>
                 <h3>Функционал</h3>

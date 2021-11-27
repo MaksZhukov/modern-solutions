@@ -523,7 +523,7 @@ export default function TradeManagement() {
                         конфигурацию «Бухгалтерия для Беларуси».
                     </p>
                 </div>
-                <a href='http://by.demo.1c.eu/trade/'>
+                <a target='_blank' href='http://by.demo.1c.eu/trade/'>
                     <Button>Демо-версия конфигурации</Button>
                 </a>
                 <h3>Функционал</h3>
