@@ -23,15 +23,15 @@ export default function Layout({ children }) {
                     <div className={styles.logo}>
                         <Link href='/'>
                             <Image
-                                src={'/logo.jpg'}
-                                width={39}
-                                height={57}
+                                src={'/logo-1.jpg'}
+                                width={100}
+                                height={75}
                                 alt='Logo'
                                 className={styles.logo__img}></Image>
                         </Link>
-                        <span className={styles['logo__text']}>
+                        {/* <span className={styles['logo__text']}>
                             Современное решение
-                        </span>
+                        </span> */}
                     </div>
                     <nav>
                         <ul className={styles['list']}>
