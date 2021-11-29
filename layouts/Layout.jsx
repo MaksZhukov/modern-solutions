@@ -23,15 +23,12 @@ export default function Layout({ children }) {
                     <div className={styles.logo}>
                         <Link href='/'>
                             <Image
-                                src={'/logo-1.jpg'}
-                                width={100}
-                                height={75}
+                                src={'/logo.jpg'}
+                                width={250}
+                                height={45}
                                 alt='Logo'
                                 className={styles.logo__img}></Image>
                         </Link>
-                        {/* <span className={styles['logo__text']}>
-                            Современное решение
-                        </span> */}
                     </div>
                     <nav>
                         <ul className={styles['list']}>
@@ -61,11 +58,15 @@ export default function Layout({ children }) {
                         </ul>
                     </nav>
                     <div className={styles.contacts}>
-                        <a className={styles['contacts__link']} href='#'>
-                            +375 (25) 840-22-63
+                        <a
+                            className={styles['contacts__link']}
+                            href='tel:+375257402263'>
+                            +375 (25) 740-22-63
                         </a>
-                        <a className={styles['contacts__link']} href='#'>
-                            it-cooperation@gmail.ru
+                        <a
+                            className={styles['contacts__link']}
+                            href='mailto:it-cooperation@yandex.by'>
+                            it-cooperation@yandex.by
                         </a>
                     </div>
                 </Container>

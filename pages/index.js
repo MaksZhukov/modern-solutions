@@ -161,7 +161,7 @@ export default function Home() {
     return (
         <Layout>
             <Parallax
-                bgImage='main-section-1.png'
+                bgImage='main-section-2.png'
                 bgImageAlt='1c'
                 contentClassName={styles['main-section__content']}
                 strength={300}
