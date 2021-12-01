@@ -24,8 +24,8 @@ export default function Layout({ children }) {
                         <Link href='/'>
                             <Image
                                 src={'/logo.jpg'}
-                                width={250}
-                                height={45}
+                                width={256}
+                                height={36}
                                 alt='Logo'
                                 className={styles.logo__img}></Image>
                         </Link>
