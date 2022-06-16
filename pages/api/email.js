@@ -5,6 +5,7 @@ const client = new SMTPClient({
 	password: 'ytngfhjkz199719971997',
 	host: 'smtp.gmail.com',
 	port: 587,
+
 	ssl: true,
 });
 
