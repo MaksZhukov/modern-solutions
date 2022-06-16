@@ -5,12 +5,15 @@ import { useEffect, useState } from 'react';
 import Input from '../../components/Input/Input';
 import Textarea from '../../components/Textarea/Textarea';
 import Button from '../../components/Button/Button';
+import axios from 'axios';
 
 export default function Contacts() {
 	const [name, setName] = useState('');
 	const [phone, setPhone] = useState('');
 	const [comment, setComment] = useState('');
-	const handleSubmit = () => {};
+	const handleSubmit = async () => {
+		await axios.post('api/email', { name, phone, text: comment });
+	};
 
 	return (
 		<Layout>
@@ -77,7 +80,9 @@ export default function Contacts() {
 								соглашаетесь на обработку персональных данных.
 							</div>
 							<div className={styles.form__control}>
-								<Button>ПОДАТЬ ЗАЯВКУ</Button>
+								<Button onClick={handleSubmit}>
+									ПОДАТЬ ЗАЯВКУ
+								</Button>
 							</div>
 						</div>
 					</div>
