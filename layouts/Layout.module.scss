@@ -18,6 +18,13 @@
     padding-top: 78px;
 }
 
+.logo-menu-container {
+    display: flex;
+    @media screen and (max-width: $breakpoint-desktop) {
+        flex-direction: column;
+    }
+}
+
 .logo {
     display: flex;
     align-items: center;
@@ -28,6 +35,12 @@
     }
     &__img {
         cursor: pointer;
+    }
+    @media screen and (max-width: $breakpoint-desktop) {
+        justify-content: center;
+    }
+    @media screen and (max-width: $breakpoint-mobile) {
+        width: 150px;
     }
 }
 
@@ -47,6 +60,21 @@
         }
     }
     margin-right: 10px;
+    @media screen and (max-width: $breakpoint-desktop) {
+        padding: 0;
+        margin: 0;
+    }
+    @media screen and (max-width: $breakpoint-tablet) {
+        flex-direction: column;
+        position: absolute;
+        left: 0;
+        background-color: $color-1;
+        width: 100%;
+        border-bottom: 4px solid $color-accent;
+        &_closed {
+            display: none;
+        }
+    }
 }
 
 .contacts {
@@ -62,9 +90,59 @@
             color: $color-accent;
         }
     }
+    @media screen and (max-width: $breakpoint-desktop) {
+        margin: 0;
+    }
 }
 
 .footer {
     padding: 10px;
     background-color: $color-3;
+}
+
+.menu-button-container {
+    display: none;
+    height: 25px;
+    margin-top: 5px;
+    width: 30px;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @media screen and (max-width: $breakpoint-tablet) {
+        display: flex;
+    }
+}
+
+.menu-button {
+    &,
+    &::after,
+    &::before {
+        display: block;
+        background-color: $color-accent;
+        position: absolute;
+        height: 4px;
+        width: 30px;
+        transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+        border-radius: 2px;
+    }
+    &::before {
+        content: '';
+        margin-top: -8px;
+    }
+    &::after {
+        content: '';
+        margin-top: 8px;
+    }
+    &_active {
+        &::before {
+            margin-top: 0px;
+            transform: rotate(405deg);
+        }
+        background: rgba(255, 255, 255, 0);
+        &::after {
+            margin-top: 0px;
+            transform: rotate(-405deg);
+        }
+    }
 }
