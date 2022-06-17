@@ -1,18 +1,5 @@
 {
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
-  "/api/email": "pages/api/email.js",
-  "/services/[id]": "pages/services/[id].html",
-  "/prices": "pages/prices.js",
-  "/contacts": "pages/contacts.js",
-  "/": "pages/index.js",
-  "/programs": "pages/programs.js",
-  "/programs/retail": "pages/programs/retail.js",
-  "/programs/accounting": "pages/programs/accounting.js",
-  "/_document": "pages/_document.js",
-  "/programs/trade-management": "pages/programs/trade-management.js",
-  "/reviews": "pages/reviews.js",
-  "/services": "pages/services.js",
-  "/programs/company-management": "pages/programs/company-management.js",
-  "/404": "pages/404.html"
+  "/_document": "pages/_document.js"
 }
