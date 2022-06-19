@@ -1,106 +1,122 @@
 @import '../../styles/variables.scss';
 
 .title {
-    text-align: center;
-    margin: 50px 0;
+	text-align: center;
+	margin: 50px 0;
 }
 
 .subtitle {
-    margin-bottom: 30px;
+	margin-bottom: 30px;
+	@media (max-width: $breakpoint-mobile) {
+		text-align: center;
+	}
 }
 
 .content__info {
-    margin-bottom: 30px;
-    text-align: center;
+	margin-bottom: 30px;
+	text-align: center;
 }
 
 .content {
-    display: flex;
-    margin-bottom: 30px;
-    &__left {
-        flex: 1;
-    }
-    &__right {
-        flex: 3;
-    }
+	display: flex;
+	margin-bottom: 30px;
+	&__left {
+		flex: 1;
+	}
+	&__right {
+		flex: 3;
+	}
+	@media (max-width: $breakpoint-mobile) {
+		flex-direction: column;
+		&__left {
+			display: flex;
+			text-align: center;
+			flex-direction: column;
+			justify-content: center;
+		}
+	}
 }
 
 .phone {
-    position: relative;
-    display: inline-block;
-    margin-bottom: 20px;
-    &__text {
-        position: absolute;
-        top: 30%;
-        left: 50%;
-        transform: translateX(-50%);
-        text-transform: uppercase;
-        font-weight: bold;
-        font-size: 24px;
-    }
-    &__tel {
-        position: absolute;
-        color: $color-accent;
-        position: absolute;
-        top: 40%;
-        left: 50%;
-        width: 100%;
-        text-align: center;
-        font-size: 16px;
-        text-decoration: none;
-        font-weight: bold;
-        transform: translateX(-50%);
-        &:hover {
-            transition: all 0.3s ease-in-out;
-            color: $color-2;
-        }
-    }
+	position: relative;
+	display: inline-block;
+	margin-bottom: 20px;
+	&__text {
+		position: absolute;
+		top: 30%;
+		left: 50%;
+		transform: translateX(-50%);
+		text-transform: uppercase;
+		font-weight: bold;
+		font-size: 24px;
+	}
+	&__tel {
+		position: absolute;
+		color: $color-accent;
+		position: absolute;
+		top: 40%;
+		left: 50%;
+		width: 100%;
+		text-align: center;
+		font-size: 16px;
+		text-decoration: none;
+		font-weight: bold;
+		transform: translateX(-50%);
+		&:hover {
+			transition: all 0.3s ease-in-out;
+			color: $color-2;
+		}
+	}
 }
 
 .email {
-    &__title {
-        font-weight: bold;
-        font-size: 24px;
-    }
-    &__value {
-        text-decoration: none;
-        color: $color-2;
-        font-weight: 500;
-        font-size: 18px;
-        &:hover {
-            transition: all 0.3s ease-in-out;
-            color: $color-accent;
-        }
-        span {
-            color: $color-accent;
-        }
-    }
+	&__title {
+		font-weight: bold;
+		font-size: 24px;
+	}
+	&__value {
+		text-decoration: none;
+		color: $color-2;
+		font-weight: 500;
+		font-size: 18px;
+		&:hover {
+			transition: all 0.3s ease-in-out;
+			color: $color-accent;
+		}
+		span {
+			color: $color-accent;
+		}
+	}
 }
 
 .form {
-    height: 100%;
-    padding: 0 60px;
-    &__title {
-        font-size: 24px;
-        font-weight: 500;
-        margin-bottom: 20px;
-    }
-    border-left: 1px solid $color-3;
-    &__control {
-        margin-bottom: 20px;
-    }
-    &__policy {
-        font-size: 12px;
-        margin-bottom: 10px;
-    }
+	height: 100%;
+	padding: 0 60px;
+	&__title {
+		font-size: 24px;
+		font-weight: 500;
+		margin-bottom: 20px;
+	}
+	border-left: 1px solid $color-3;
+	&__control {
+		margin-bottom: 20px;
+	}
+	&__policy {
+		font-size: 12px;
+		margin-bottom: 10px;
+	}
+	@media (max-width: $breakpoint-mobile) {
+		border-left: none;
+		text-align: center;
+	}
 }
 
 .success {
-    color: $success;
-    font-size: 24px;
+	color: $success;
+	font-size: 24px;
 }
 
 .error {
-    color: $error;
-    font-size: 24px;
+	color: $error;
+	font-size: 24px;
 }

@@ -1,21 +1,25 @@
 @import '../../styles/variables.scss';
 
 .services {
-    &__item {
-        display: flex;
-        margin-bottom: 30px;
-        border-bottom: 2px solid $color-accent;
-        padding: 20px 0;
-        align-items: center;
-        &:last-child {
-            border-bottom: none;
-        }
-    }
-    &__img {
-        width: 200px;
-        margin: 0 50px;
-    }
-    &__content {
-        flex: 3;
-    }
+	&__item {
+		display: flex;
+		margin-bottom: 30px;
+		border-bottom: 2px solid $color-accent;
+		padding: 20px 0;
+		align-items: center;
+		&:last-child {
+			border-bottom: none;
+		}
+		@media (max-width: $breakpoint-mobile) {
+			flex-direction: column;
+			text-align: center;
+		}
+	}
+	&__img {
+		width: 200px;
+		margin: 0 50px;
+	}
+	&__content {
+		flex: 3;
+	}
 }
