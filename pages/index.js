@@ -278,8 +278,17 @@ export default function Home() {
 						arrows
 						infinite
 						speed={500}
-						slidesToScroll={2}
+						responsive={[
+							{
+								breakpoint: 576,
+								settings: {
+									slidesToShow: 1,
+									slidesToScroll: 1,
+								},
+							},
+						]}
 						slidesToShow={3}
+						slidesToScroll={2}
 						className={styles.clients}>
 						{clientImages.map((item, index) => (
 							<div
