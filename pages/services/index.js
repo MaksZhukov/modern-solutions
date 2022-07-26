@@ -8,8 +8,8 @@ import { services } from '../../config';
 export default function Prices() {
     const router = useRouter();
 
-    const handleClick = (index) => () => {
-        router.push('services/' + index);
+    const handleClick = (href) => () => {
+        router.push('services/' + href);
     };
     return (
         <Container>
@@ -20,7 +20,7 @@ export default function Prices() {
                         <div className={styles.reviews__content}>
                             <h3>{item.title}</h3>
                             <p>{item.description}</p>
-                            <Button onClick={handleClick(index)}>Подробнее</Button>
+                            <Button onClick={handleClick(item.href)}>Подробнее</Button>
                         </div>
                     </div>
                 ))}

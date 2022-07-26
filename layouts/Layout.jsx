@@ -20,11 +20,10 @@ export default function Layout({ children }) {
 	const router = useRouter();
 	const ref = useRef();
 	const [isOpenedMobileMenu, setIsOpenedMobileMenu] = useState(false);
-
+	const twoLevelPath = router.pathname.split('/').length === 3;
 	const handleClickOutside = () => {
 		setIsOpenedMobileMenu(false);
 	};
-
 	useOnClickOutside(ref, handleClickOutside);
 
 	const handleClickMobileMenu = () => {
@@ -38,7 +37,7 @@ export default function Layout({ children }) {
 						<div className={styles.logo}>
 							<Link href='/'>
 								<Image
-									src={'/logo.jpg'}
+									src={`${twoLevelPath ? '..' : ''}/logo.jpg`}
 									width={256}
 									height={36}
 									alt='Logo'
@@ -109,18 +108,30 @@ export default function Layout({ children }) {
 			<footer className={styles.footer}>
 				<Container className={styles['footer__content']}>
 					<div className={styles.about}>
-						<h4 className={styles['about__title']}>О НАС</h4>
-						<div className={styles['about__description']}>
-							Lorem ipsum dolor sit amet consectetur adipisicing
-							elit. Ipsam laborum quod quis amet autem consectetur
-							voluptatibus et ut aspernatur sequi ducimus atque
-							voluptate laudantium, eaque odit quo hic rem cumque.
+						<h4 >О НАС</h4>
+						В торговом реестре с 17 мая 2017, <br></br> 
+						Свидетельство о	гос. регистрации №191646728,<br></br> 
+						20.12.2011 выдано Мингорисполкомом	<br></br> <br></br>
+						Все права защищены © 2017-{new Date().getFullYear()}
+					</div>
+					<div className={styles['footer-contacts']}>
+						<h4>Контакты</h4>
+						<div>
+						Руководитель: Жлобо Андрей Игоревич
+						<br></br>
+						<a
+							className={styles['contacts__link']}
+							href='tel:+375257402263'>
+							+375 (25) 740-22-63
+						</a>
+						<br></br>
+						<a
+							className={styles['contacts__link']}
+							href='mailto:it-cooperation@yandex.by'>
+							it-cooperation@yandex.by
+						</a>
+						<br></br>
 						</div>
-						<span className={styles['about__reg']}>
-							В торговом реестре с 17 мая 2017, Свидетельство о
-							гос. регистрации №191646728, 20.12.2011 выдано
-							Мингорисполкомом
-						</span>
 					</div>
 				</Container>
 			</footer>

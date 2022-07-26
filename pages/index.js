@@ -260,16 +260,20 @@ export default function Home() {
 						</div>
 					))}
 				</div>
-				<div className={styles['prices-info']}>
-					<img
-						className={styles['prices-info__img']}
-						src='price-info.png'></img>
-					<div className={styles['prices-info__desc']}>
-						Конечная стоимость рассчитывается индивидуально. <br />
-						Вы можете оставить заявку на расчет стоимости услуг
-						прямо сейчас, и мы свяжемся с вами для уточнения
-						деталей.
-					</div>
+				<h2 className={styles['title']}>Этапы нашего сотрудничества с клиентами</h2>
+				<div className={styles['stages-of-cooperation']}>
+					<div className={styles['stages-of-cooperation__item']}><span className={styles['stages-of-cooperation__num']}>1</span><div className={styles['stages-of-cooperation__text']}>Вы звоните нам по телефону <a className={styles['stages-of-cooperation__link']}
+							href='tel:+375257402263'>
+							+375 (25) 740-22-63
+						</a> или пишите на почту 						<a
+							className={styles['stages-of-cooperation__link']}
+							href='mailto:it-cooperation@yandex.by'>
+							it-cooperation@yandex.by
+						</a>.</div></div>
+					<div className={styles['stages-of-cooperation__item']}><span className={styles['stages-of-cooperation__num']}>2</span><div className={styles['stages-of-cooperation__text']}>Мы проведем комплексный анализ вашей деятельности и выявим необходимые доработки.</div></div>
+					<div className={styles['stages-of-cooperation__item']}><span className={styles['stages-of-cooperation__num']}>3</span><div className={styles['stages-of-cooperation__text']}>Разработаем техдокументацию, зафиксируем все важные для вас параметры.</div></div>
+					<div className={styles['stages-of-cooperation__item']}><span className={styles['stages-of-cooperation__num']}>4</span><div className={styles['stages-of-cooperation__text']}>Модифицируем программу и тестируем её.</div></div>
+					<div className={styles['stages-of-cooperation__item']}><span className={styles['stages-of-cooperation__num']}>5</span><div className={styles['stages-of-cooperation__text']}>Встраиваем новый функционал в рабочую базу. Проводим обучение сотрудников.</div></div>
 				</div>
 				<h2 className={styles['title']}>Наши клиенты</h2>
 				<div className={styles['clients-wrapper']}>

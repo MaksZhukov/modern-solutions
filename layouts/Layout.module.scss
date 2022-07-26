@@ -96,8 +96,24 @@
 }
 
 .footer {
+    border-top: 4px solid #ffb515;
     padding: 10px;
     background-color: $color-3;
+    &__content{
+        display: flex;
+    }
+    @media screen and (max-width: $breakpoint-mobile) {
+        &__content{
+            display: initial;
+        }
+    }
+}
+
+.footer-contacts{
+    margin-left: 40px;
+    @media screen and (max-width: $breakpoint-mobile) {
+        margin-left: 0;
+    }
 }
 
 .menu-button-container {
