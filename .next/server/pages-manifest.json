@@ -1,5 +1,23 @@
 {
   "/_app": "pages/_app.js",
+  "/api/email": "pages/api/email.js",
   "/_error": "pages/_error.js",
-  "/_document": "pages/_document.js"
+  "/services/implementation-and-training": "pages/services/implementation-and-training.html",
+  "/services/integration": "pages/services/integration.html",
+  "/services/installation": "pages/services/installation.html",
+  "/services/rework": "pages/services/rework.html",
+  "/services/transition": "pages/services/transition.html",
+  "/services/updating": "pages/services/updating.html",
+  "/prices": "pages/prices.js",
+  "/programs/accounting": "pages/programs/accounting.js",
+  "/_document": "pages/_document.js",
+  "/programs": "pages/programs.js",
+  "/": "pages/index.js",
+  "/contacts": "pages/contacts.js",
+  "/programs/company-management": "pages/programs/company-management.js",
+  "/programs/retail": "pages/programs/retail.js",
+  "/reviews": "pages/reviews.js",
+  "/programs/trade-management": "pages/programs/trade-management.js",
+  "/services": "pages/services.js",
+  "/404": "pages/404.html"
 }
