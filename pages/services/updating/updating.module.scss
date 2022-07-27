@@ -1,0 +1,30 @@
+@import '../../../styles/variables.scss';
+
+.title {
+	text-align: center;
+}
+
+.list {
+	margin-bottom: 40px;
+}
+
+.services {
+	margin-top: 40px;
+	display: flex;
+	flex-wrap: wrap;
+	&__item {
+		display: flex;
+		align-items: center;
+		margin-bottom: 20px;
+		width: 45%;
+		margin-right: 5%;
+	}
+	&__img {
+		margin-right: 20px;
+	}
+	@media screen and (max-width: $breakpoint-tablet) {
+		&__item {
+			width: 100%;
+		}
+	}
+}

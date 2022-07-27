@@ -1,0 +1,83 @@
+@import '../../../styles/variables.scss';
+
+.title {
+	text-align: center;
+}
+
+.list {
+	margin-bottom: 40px;
+}
+
+.list {
+	display: flex;
+	flex-wrap: wrap;
+	padding-top: 25px;
+	&_new-abilities {
+		.list__item {
+			width: 100%;
+		}
+	}
+	&_why-need {
+		.list__item {
+			width: 33%;
+		}
+		@media screen and (max-width: $breakpoint-tablet) {
+			.list__item {
+				width: 100%;
+			}
+		}
+	}
+	&_stages {
+		margin-bottom: 20px;
+		.list__item {
+			width: initial;
+			margin-right: 20px;
+			align-items: center;
+		}
+	}
+	&__item {
+		width: 50%;
+		display: flex;
+		align-items: flex-start;
+		margin-bottom: 20px;
+	}
+	&__img {
+		margin-right: 20px;
+		width: 50px;
+	}
+	&__check {
+		min-width: 50px;
+		border-radius: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-right: 20px;
+		border: 1px solid $color-accent;
+		height: 50px;
+	}
+	&__num {
+		font-size: 24px;
+		color: $color-accent;
+		min-width: 50px;
+		height: 50px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-right: 10px;
+		&_filled {
+			border-radius: 50%;
+			border: 1px solid $color-accent;
+		}
+	}
+	@media screen and (max-width: $breakpoint-tablet) {
+		.list__item {
+			width: 100%;
+		}
+	}
+}
+
+.img {
+	margin: auto;
+	display: block;
+	max-width: 100%;
+}

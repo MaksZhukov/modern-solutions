@@ -1,0 +1,88 @@
+@import '../../../styles/variables.scss';
+
+.title {
+	text-align: center;
+}
+
+.list-title {
+	text-align: center;
+}
+
+.list {
+	margin-bottom: 40px;
+}
+
+.img {
+	float: left;
+	max-width: 600px;
+	margin-right: 20px;
+	@media screen and (max-width: $breakpoint-desktop) {
+		max-width: 300px;
+	}
+	@media screen and (max-width: $breakpoint-tablet) {
+		max-width: 100%;
+	}
+}
+
+.list {
+	padding-top: 25px;
+	display: flex;
+	flex-wrap: wrap;
+	&_cases,
+	&_advantages,
+	&_integration {
+		.list__item {
+			width: 50%;
+		}
+		@media screen and (max-width: $breakpoint-tablet) {
+			.list__item {
+				width: 100%;
+			}
+		}
+	}
+	&_stages {
+		.list__item {
+			width: 33%;
+		}
+		@media screen and (max-width: $breakpoint-desktop) {
+			.list__item {
+				width: 50%;
+			}
+		}
+		@media screen and (max-width: $breakpoint-tablet) {
+			.list__item {
+				width: 100%;
+			}
+		}
+	}
+	&__item {
+		padding: 0 5px;
+		margin-bottom: 20px;
+		display: flex;
+		align-items: flex-start;
+	}
+	&__title {
+		color: $color-accent;
+		font-size: 20px;
+	}
+	&__subtitle {
+		font-weight: bold;
+		color: $color-accent;
+	}
+	&__num {
+		margin-right: 20px;
+		color: $color-accent;
+		font-size: 36px;
+		font-weight: bold;
+		min-width: 50px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		&_filled {
+			background-color: $color-accent;
+			color: $color-1;
+			border-radius: 50%;
+			height: 50px;
+		}
+	}
+}

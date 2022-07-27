@@ -1,164 +1,165 @@
 @import '../styles/variables.scss';
 
 .header {
-    position: fixed;
-    width: 100%;
-    padding: 5px 0;
-    border-bottom: 4px solid $color-accent;
-    background-color: $color-1;
-    z-index: 10;
-    &__content {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
+	position: fixed;
+	width: 100%;
+	padding: 5px 0;
+	border-bottom: 4px solid $color-accent;
+	background-color: $color-1;
+	z-index: 10;
+	&__content {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
 }
 
 .main {
-    padding-top: 78px;
+	padding-top: 108px;
+	padding-bottom: 30px;
 }
 
 .logo-menu-container {
-    display: flex;
-    @media screen and (max-width: $breakpoint-desktop) {
-        flex-direction: column;
-    }
+	display: flex;
+	@media screen and (max-width: $breakpoint-desktop) {
+		flex-direction: column;
+	}
 }
 
 .logo {
-    display: flex;
-    align-items: center;
-    flex: 1;
-    &__text {
-        padding-left: 10px;
-        font-size: 26px;
-    }
-    &__img {
-        cursor: pointer;
-    }
-    @media screen and (max-width: $breakpoint-desktop) {
-        justify-content: center;
-    }
-    @media screen and (max-width: $breakpoint-mobile) {
-        width: 150px;
-    }
+	display: flex;
+	align-items: center;
+	flex: 1;
+	&__text {
+		padding-left: 10px;
+		font-size: 26px;
+	}
+	&__img {
+		cursor: pointer;
+	}
+	@media screen and (max-width: $breakpoint-desktop) {
+		justify-content: center;
+	}
+	@media screen and (max-width: $breakpoint-mobile) {
+		width: 150px;
+	}
 }
 
 .list {
-    list-style-type: none;
-    display: flex;
-    &__item {
-        font-size: 18px;
-        padding: 5px 8px;
-        cursor: pointer;
-        transition: all 0.3s ease-in-out;
-        &_active {
-            color: $color-accent;
-        }
-        &:hover {
-            color: $color-accent;
-        }
-    }
-    margin-right: 10px;
-    @media screen and (max-width: $breakpoint-desktop) {
-        padding: 0;
-        margin: 0;
-    }
-    @media screen and (max-width: $breakpoint-tablet) {
-        flex-direction: column;
-        position: absolute;
-        left: 0;
-        background-color: $color-1;
-        width: 100%;
-        border-bottom: 4px solid $color-accent;
-        &_closed {
-            display: none;
-        }
-    }
+	list-style-type: none;
+	display: flex;
+	&__item {
+		font-size: 18px;
+		padding: 5px 8px;
+		cursor: pointer;
+		transition: all 0.3s ease-in-out;
+		&_active {
+			color: $color-accent;
+		}
+		&:hover {
+			color: $color-accent;
+		}
+	}
+	margin-right: 10px;
+	@media screen and (max-width: $breakpoint-desktop) {
+		padding: 0;
+		margin: 0;
+	}
+	@media screen and (max-width: $breakpoint-tablet) {
+		flex-direction: column;
+		position: absolute;
+		left: 0;
+		background-color: $color-1;
+		width: 100%;
+		border-bottom: 4px solid $color-accent;
+		&_closed {
+			display: none;
+		}
+	}
 }
 
 .contacts {
-    display: flex;
-    flex-direction: column;
-    margin-left: 30px;
-    &__link {
-        color: $color-2;
-        font-weight: bold;
-        text-decoration: none;
-        transition: all 0.3s ease-in-out;
-        &:hover {
-            color: $color-accent;
-        }
-    }
-    @media screen and (max-width: $breakpoint-desktop) {
-        margin: 0;
-    }
+	display: flex;
+	flex-direction: column;
+	margin-left: 30px;
+	&__link {
+		color: $color-2;
+		font-weight: bold;
+		text-decoration: none;
+		transition: all 0.3s ease-in-out;
+		&:hover {
+			color: $color-accent;
+		}
+	}
+	@media screen and (max-width: $breakpoint-desktop) {
+		margin: 0;
+	}
 }
 
 .footer {
-    border-top: 4px solid #ffb515;
-    padding: 10px;
-    background-color: $color-3;
-    &__content{
-        display: flex;
-    }
-    @media screen and (max-width: $breakpoint-mobile) {
-        &__content{
-            display: initial;
-        }
-    }
+	border-top: 4px solid #ffb515;
+	padding: 10px;
+	background-color: $color-3;
+	&__content {
+		display: flex;
+	}
+	@media screen and (max-width: $breakpoint-mobile) {
+		&__content {
+			display: initial;
+		}
+	}
 }
 
-.footer-contacts{
-    margin-left: 40px;
-    @media screen and (max-width: $breakpoint-mobile) {
-        margin-left: 0;
-    }
+.footer-contacts {
+	margin-left: 40px;
+	@media screen and (max-width: $breakpoint-mobile) {
+		margin-left: 0;
+	}
 }
 
 .menu-button-container {
-    display: none;
-    height: 25px;
-    margin-top: 5px;
-    width: 30px;
-    cursor: pointer;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    @media screen and (max-width: $breakpoint-tablet) {
-        display: flex;
-    }
+	display: none;
+	height: 25px;
+	margin-top: 5px;
+	width: 30px;
+	cursor: pointer;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	@media screen and (max-width: $breakpoint-tablet) {
+		display: flex;
+	}
 }
 
 .menu-button {
-    &,
-    &::after,
-    &::before {
-        display: block;
-        background-color: $color-accent;
-        position: absolute;
-        height: 4px;
-        width: 30px;
-        transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
-        border-radius: 2px;
-    }
-    &::before {
-        content: '';
-        margin-top: -8px;
-    }
-    &::after {
-        content: '';
-        margin-top: 8px;
-    }
-    &_active {
-        &::before {
-            margin-top: 0px;
-            transform: rotate(405deg);
-        }
-        background: rgba(255, 255, 255, 0);
-        &::after {
-            margin-top: 0px;
-            transform: rotate(-405deg);
-        }
-    }
+	&,
+	&::after,
+	&::before {
+		display: block;
+		background-color: $color-accent;
+		position: absolute;
+		height: 4px;
+		width: 30px;
+		transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+		border-radius: 2px;
+	}
+	&::before {
+		content: '';
+		margin-top: -8px;
+	}
+	&::after {
+		content: '';
+		margin-top: 8px;
+	}
+	&_active {
+		&::before {
+			margin-top: 0px;
+			transform: rotate(405deg);
+		}
+		background: rgba(255, 255, 255, 0);
+		&::after {
+			margin-top: 0px;
+			transform: rotate(-405deg);
+		}
+	}
 }

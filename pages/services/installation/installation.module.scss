@@ -1,0 +1,25 @@
+@import '../../../styles/variables.scss';
+
+.title {
+	text-align: center;
+}
+
+.list-title {
+	text-align: center;
+}
+
+.list {
+	margin-bottom: 40px;
+}
+
+.img {
+	float: left;
+	max-width: 600px;
+	margin-right: 20px;
+	@media screen and (max-width: $breakpoint-desktop) {
+		max-width: 300px;
+	}
+	@media screen and (max-width: $breakpoint-tablet) {
+		max-width: 100%;
+	}
+}

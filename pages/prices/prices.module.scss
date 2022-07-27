@@ -1,21 +1,9 @@
 @import '../../styles/variables.scss';
 
 .title {
-    margin: 50px 0;
-    text-align: center;
+	text-align: center;
 }
 
-.table {
-    width: 100%;
-    &__head {
-        background-color: $color-accent;
-    }
-    &__row {
-    }
-    &__cell {
-        padding: 5px;
-        &_center {
-            text-align: center;
-        }
-    }
+.last-table {
+	margin-bottom: 0;
 }
