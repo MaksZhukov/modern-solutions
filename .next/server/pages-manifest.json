@@ -1,6 +1,28 @@
 {
   "/_app": "pages/_app.js",
+<<<<<<< Updated upstream
+  "/api/email": "pages/api/email.js",
   "/_error": "pages/_error.js",
+  "/services/implementation-and-training": "pages/services/implementation-and-training.html",
+  "/services/installation": "pages/services/installation.html",
+  "/services/integration": "pages/services/integration.html",
+  "/services/rework": "pages/services/rework.html",
+  "/services/transition": "pages/services/transition.html",
+  "/services/updating": "pages/services/updating.html",
+  "/prices": "pages/prices.js",
+  "/programs": "pages/programs.js",
+  "/programs/accounting": "pages/programs/accounting.js",
+  "/contacts": "pages/contacts.js",
+  "/programs/company-management": "pages/programs/company-management.js",
+  "/reviews": "pages/reviews.js",
+  "/services": "pages/services.js",
+  "/": "pages/index.js",
+  "/programs/trade-management": "pages/programs/trade-management.js",
+  "/programs/retail": "pages/programs/retail.js",
   "/_document": "pages/_document.js",
-  "/": "pages/index.js"
+  "/404": "pages/404.html"
+=======
+  "/_error": "pages/_error.js",
+  "/_document": "pages/_document.js"
+>>>>>>> Stashed changes
 }
