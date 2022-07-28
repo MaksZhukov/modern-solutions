@@ -44,18 +44,17 @@ export default function Layout({ children }) {
 									className={styles.logo__img}></Image>
 							</Link>
 						</div>
-						<div
-							onClick={handleClickMobileMenu}
-							className={styles['menu-button-container']}>
+						<nav ref={ref}>
 							<div
-								className={classNames(styles['menu-button'], {
-									[styles['menu-button_active']]:
-										isOpenedMobileMenu,
-								})}></div>
-						</div>
-						<nav>
+								onClick={handleClickMobileMenu}
+								className={styles['menu-button-container']}>
+								<div
+									className={classNames(styles['menu-button'], {
+										[styles['menu-button_active']]:
+											isOpenedMobileMenu,
+									})}></div>
+							</div>
 							<ul
-								ref={ref}
 								className={classNames(styles['list'], {
 									[styles['list_closed']]:
 										!isOpenedMobileMenu,
