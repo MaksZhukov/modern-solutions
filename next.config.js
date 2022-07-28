@@ -1,9 +1,7 @@
 // next.config.js
 module.exports = {
-	output: 'standalone',
-	experimental: {
-		images: {
-			unoptimized: true,
-		},
-	},
+  images: {
+    loader: "imgix",
+    path: "http://modern-solution.by/",
+  },
 };
