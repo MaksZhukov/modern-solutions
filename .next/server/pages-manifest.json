@@ -1,41 +1,23 @@
 {
   "/_app": "pages/_app.js",
-  "/api/email": "pages/api/email.js",
   "/_error": "pages/_error.js",
-<<<<<<< HEAD
   "/api/email": "pages/api/email.js",
-=======
->>>>>>> 11171f5e252387d7edc16b69db3403a89c5cf56d
   "/services/implementation-and-training": "pages/services/implementation-and-training.html",
   "/services/installation": "pages/services/installation.html",
   "/services/integration": "pages/services/integration.html",
   "/services/rework": "pages/services/rework.html",
-  "/services/transition": "pages/services/transition.html",
   "/services/updating": "pages/services/updating.html",
-<<<<<<< HEAD
+  "/services/transition": "pages/services/transition.html",
   "/contacts": "pages/contacts.js",
-  "/programs/accounting": "pages/programs/accounting.js",
-  "/programs/company-management": "pages/programs/company-management.js",
-  "/programs": "pages/programs.js",
-  "/programs/retail": "pages/programs/retail.js",
   "/_document": "pages/_document.js",
-  "/reviews": "pages/reviews.js",
-  "/programs/trade-management": "pages/programs/trade-management.js",
-  "/services": "pages/services.js",
-  "/prices": "pages/prices.js",
   "/": "pages/index.js",
-=======
-  "/prices": "pages/prices.js",
-  "/programs": "pages/programs.js",
-  "/programs/accounting": "pages/programs/accounting.js",
-  "/contacts": "pages/contacts.js",
   "/programs/company-management": "pages/programs/company-management.js",
-  "/reviews": "pages/reviews.js",
+  "/prices": "pages/prices.js",
+  "/programs/accounting": "pages/programs/accounting.js",
+  "/programs": "pages/programs.js",
   "/services": "pages/services.js",
-  "/": "pages/index.js",
   "/programs/trade-management": "pages/programs/trade-management.js",
+  "/reviews": "pages/reviews.js",
   "/programs/retail": "pages/programs/retail.js",
-  "/_document": "pages/_document.js",
->>>>>>> 11171f5e252387d7edc16b69db3403a89c5cf56d
   "/404": "pages/404.html"
 }
