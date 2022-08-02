@@ -42,12 +42,21 @@ function handler(req, res) {
                 {
                     data: `<html><p>Имя: ${name}</p><p>Телефон: ${phone}</p><p>Коментарий: ${text}</p></html>`,
                     alternative: true
+<<<<<<< HEAD
                 }, 
             ]
         }, (err)=>{
             console.log(err);
             if (err) {
                 res.status(500).send(err);
+=======
+                }
+            ]
+        }, (err, mess)=>{
+            console.log(err, mess);
+            if (err) {
+                res.status(400).send();
+>>>>>>> 11171f5e252387d7edc16b69db3403a89c5cf56d
                 return;
             }
             res.status(200).send();
