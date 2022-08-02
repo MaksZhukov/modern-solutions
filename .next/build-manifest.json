@@ -1,18 +1,12 @@
 {
   "polyfillFiles": [
-    "static/chunks/polyfills.js"
+    "static/chunks/polyfills-c67a75d1b6f99dc8.js"
   ],
-  "devFiles": [
-    "static/chunks/react-refresh.js"
-  ],
-  "ampDevFiles": [
-    "static/chunks/webpack.js",
-    "static/chunks/amp.js"
-  ],
+  "devFiles": [],
+  "ampDevFiles": [],
   "lowPriorityFiles": [
-<<<<<<< Updated upstream
-    "static/r1-i6b6G6x1ZVPP6QxFSW/_buildManifest.js",
-    "static/r1-i6b6G6x1ZVPP6QxFSW/_ssgManifest.js"
+    "static/aK8FRcBSvjh14NXHlkPWN/_buildManifest.js",
+    "static/aK8FRcBSvjh14NXHlkPWN/_ssgManifest.js"
   ],
   "rootMainFiles": [],
   "pages": {
@@ -142,27 +136,6 @@
       "static/chunks/main-f2b944004d3d3e1c.js",
       "static/css/d903acec76030126.css",
       "static/chunks/pages/services/updating-feeb5e0850bf4a35.js"
-=======
-    "static/development/_buildManifest.js",
-    "static/development/_ssgManifest.js"
-  ],
-  "rootMainFiles": [],
-  "pages": {
-    "/_app": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/_app.js"
-    ],
-    "/_error": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/_error.js"
-    ],
-    "/contacts": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/contacts.js"
->>>>>>> Stashed changes
     ]
   },
   "ampFirstPages": []
