@@ -15,8 +15,11 @@
 }
 
 .main {
-	padding-top: 108px;
+	padding-top: 80px;
 	padding-bottom: 30px;
+	@media screen and (max-width: $breakpoint-tablet) {
+		padding-top: 65px;
+	}
 }
 
 .logo-menu-container {
@@ -103,16 +106,17 @@
 	&__content {
 		display: flex;
 	}
-	@media screen and (max-width: $breakpoint-mobile) {
+	@media screen and (max-width: $breakpoint-tablet) {
 		&__content {
-			display: initial;
+			flex-wrap: wrap;
 		}
 	}
 }
 
-.footer-contacts {
+.footer__col {
 	margin-left: 40px;
-	@media screen and (max-width: $breakpoint-mobile) {
+	@media screen and (max-width: $breakpoint-tablet) {
+		width: 100%;
 		margin-left: 0;
 	}
 }

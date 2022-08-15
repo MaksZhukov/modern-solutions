@@ -49,10 +49,13 @@ export default function Layout({ children }) {
 								onClick={handleClickMobileMenu}
 								className={styles['menu-button-container']}>
 								<div
-									className={classNames(styles['menu-button'], {
-										[styles['menu-button_active']]:
-											isOpenedMobileMenu,
-									})}></div>
+									className={classNames(
+										styles['menu-button'],
+										{
+											[styles['menu-button_active']]:
+												isOpenedMobileMenu,
+										}
+									)}></div>
 							</div>
 							<ul
 								className={classNames(styles['list'], {
@@ -106,30 +109,44 @@ export default function Layout({ children }) {
 			<main className={styles.main}>{children}</main>
 			<footer className={styles.footer}>
 				<Container className={styles['footer__content']}>
-					<div className={styles.about}>
-						<h4 >О НАС</h4>
-						В торговом реестре с 17 мая 2017, <br></br> 
-						Свидетельство о	гос. регистрации №191646728,<br></br> 
-						20.12.2011 выдано Мингорисполкомом	<br></br> <br></br>
+					<div className={styles['footer__col']}>
+						<h4>ОРГАНИЗАЦИЯ </h4>
+						<div>
+							Наименование организации: Индивидуальный
+							предприниматель Жлобо Андрей Игоревич, <br></br>
+							УНП: 692076880, <br></br> Юридический адрес
+							организации: Минская обл., <br></br> Минский р-н.,
+							д. Пильница, ул. Центральная, д. 6, <br></br>{' '}
+							Индивидуальный предприниматель: Жлобо Андрей
+							Игоревич, <br></br> БИК банка: UNBSBY2X, IBAN:
+							BY48UNBS30131441300000001933, <br></br> Банк: ЗАО
+							"БСБ Банк".
+						</div>
+					</div>
+					<div className={styles.footer__col}>
+						<h4>О НАС</h4>В торговом реестре с 17 мая 2017,{' '}
+						<br></br>
+						Свидетельство о гос. регистрации №191646728,<br></br>
+						20.12.2011 выдано Мингорисполкомом <br></br>
 						Все права защищены © 2017-{new Date().getFullYear()}
 					</div>
-					<div className={styles['footer-contacts']}>
-						<h4>Контакты</h4>
+					<div className={styles['footer__col']}>
+						<h4>КОНТАКТЫ</h4>
 						<div>
-						Руководитель: Жлобо Андрей Игоревич
-						<br></br>
-						<a
-							className={styles['contacts__link']}
-							href='tel:+375257402263'>
-							+375 (25) 740-22-63
-						</a>
-						<br></br>
-						<a
-							className={styles['contacts__link']}
-							href='mailto:it-cooperation@yandex.by'>
-							it-cooperation@yandex.by
-						</a>
-						<br></br>
+							Руководитель: Жлобо Андрей Игоревич
+							<br></br>
+							<a
+								className={styles['contacts__link']}
+								href='tel:+375257402263'>
+								+375 (25) 740-22-63
+							</a>
+							<br></br>
+							<a
+								className={styles['contacts__link']}
+								href='mailto:it-cooperation@yandex.by'>
+								it-cooperation@yandex.by
+							</a>
+							<br></br>
 						</div>
 					</div>
 				</Container>
