@@ -13,7 +13,7 @@ const menu = [
 	{ path: '/prices', name: 'Прайс-лист' },
 	{ path: '/services', name: 'Услуги' },
 	{ path: '/contacts', name: 'Контакты' },
-	{ path: '/reviews', name: 'Отзывы' },
+	// { path: '/reviews', name: 'Отзывы' },
 ];
 
 export default function Layout({ children }) {

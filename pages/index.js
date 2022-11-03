@@ -12,10 +12,6 @@ import { Tab, TabList, TabPanel, Tabs } from 'react-tabs';
 
 const clientImages = [
 	{
-		url: 'client-1.png',
-		height: '50px',
-	},
-	{
 		url: 'client-2.jpg',
 		height: '110px',
 	},
@@ -43,10 +39,6 @@ const clientImages = [
 	{
 		url: 'client-9.png',
 		height: '120px',
-	},
-	{
-		url: 'client-10.jpg',
-		height: '150px',
 	},
 	{
 		url: 'client-11.jpg',

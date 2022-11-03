@@ -100,9 +100,9 @@
 }
 
 .footer {
-	border-top: 4px solid #ffb515;
+	border-top: 4px solid $color-accent;
 	padding: 10px;
-	background-color: $color-3;
+	background-color: rgba($color-accent, 0.1);
 	&__content {
 		display: flex;
 	}
