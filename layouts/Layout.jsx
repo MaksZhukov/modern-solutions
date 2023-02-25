@@ -103,12 +103,12 @@ export default function Layout({ children }) {
                             Банк: ЗАО "БСБ Банк".
                         </div>
                     </div>
-                    <div className={styles.footer__col}>
+                    {/* <div className={styles.footer__col}>
                         <h4>О НАС</h4>В торговом реестре с 17 мая 2017, <br></br>
                         Свидетельство о гос. регистрации №191646728,<br></br>
                         20.12.2011 выдано Мингорисполкомом <br></br>
                         Все права защищены © 2017-{new Date().getFullYear()}
-                    </div>
+                    </div> */}
                     <div className={styles['footer__col']}>
                         <h4>КОНТАКТЫ</h4>
                         <div>
