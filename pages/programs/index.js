@@ -47,9 +47,9 @@ export default function Programs() {
                         <div className={styles.programs__content}>
                             <h2>{item.name}</h2>
                             <p className={styles.programs__desc}>{item.description}</p>
-                            <Link href={item.href}>
+                            {/* <Link href={item.href}>
                                 <Button>Подробнее</Button>
-                            </Link>
+                            </Link> */}
                         </div>
                     </div>
                 ))}
