@@ -10,7 +10,6 @@ import { useEffect, useState } from 'react';
 import { Parallax } from 'react-parallax';
 import { Tab, TabList, TabPanel, Tabs } from 'react-tabs';
 
-
 const clientImages = [
     {
         url: 'client-2.jpg',
