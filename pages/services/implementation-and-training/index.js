@@ -13,7 +13,7 @@ export default function ImplementationAndTraining() {
 				<img
 					alt={'Integration'}
 					className={styles.img}
-					src={'../implementation.png'}></img>
+					src={'../implementation_no-1c.png'}></img>
 				<div>
 					Программные продукты «1С:Предприятие 8» имеют широкий
 					функционал и множество особенностей использования.

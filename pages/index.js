@@ -123,7 +123,7 @@ const help1cYouTabs = [
 
 const help1cYouTabsContent = [
 	{
-		url: 'how-it-helps-1.png',
+		url: 'how-it-helps-1_no-1c.png',
 		title: 'Решение 1C для бухгалтеров:',
 		advantages: [
 			'Сдавайте отчетность прямо из 1С. Всегда в срок и без стресса.',
